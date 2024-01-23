@@ -1,118 +1,81 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import Header from '../components/Header';
+import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function Home() {
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+
+      <div className="flex flex-col font-sans antialiased">
+        <Header />
+        <div className="relative mx-auto">
+          <img className=" w-full object-cover" src="/assets/profil.jpg" alt="image profil" />
+          
+          <div className="absolute inset-0 flex justify-center items-center">
+            <h2 className="text-customColor-white lg:text-4xl font-bold drop-shadow-xl italic">Charles CANTLIN - Photographe</h2>
+          </div>
         </div>
+        <button
+          className="mx-auto bg-customColor-dark text-customColor-white font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Découvrez mon univers
+        </button>
+      </div>
+      <div className="mx-auto max-w-7xl text-center text-customColor-light text-2xl font-medium italic p-20">
+        <p>Bienvenue dans l'univers captivant de la photographie, où chaque cliché raconte une histoire unique, figeant le temps pour l'éternité.</p>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+        <section className="grid md:grid-cols-2 gap-10 mb-20 p-5 rounded-3xl">
+          <div>
+            <h2 class="text-2xl text-customColor-dark font-bold">Quels sont les coulisses ?</h2>
+
+            <p className="font-medium text-justify">
+              <br />
+              Avant la séance photo, tout commence par une phase cruciale de planification. Je prend le temps de discuter avec vous pour comprendre vos attentes, vos préférences et le message que vous souhaitez transmettre à travers les photos. Cette étape permet d'établir un concept solide qui servira de guide tout au long de la séance. Des détails logistiques tels que le choix du lieu, l'heure de la séance, les accessoires éventuels et d'autres aspects pratiques sont minutieusement planifiés.
+
+              <br />
+
+              <br />En post-production, le travail artistique du photographe se poursuit. Chaque photo est minutieusement examinée et perfectionnée, que ce soit par le biais de corrections de couleurs, d'ajustements de contraste ou de retouches fines. Les images obtenues sont ainsi sublimées, mettant en lumière le talent et la créativité du photographe tout en donnant vie à la vision initiale discutée lors de la planification.</p>
+              <button
+              className="mt-10 bg-customColor-dark text-customColor-white font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <Link href="/contact">
+                Contact
+                </Link>
+              
+            </button> 
+          </div>
+          <img src="assets/coulisse.jpg" size="100" className="rounded w-full h-full object-cover" alt="portrait" />
+        </section>
+
+        <section className="grid md:grid-cols-2 pt-20 gap-10 mb-20 p-5 rounded-3xl">
+          <img src="assets/studio.jpg" className="rounded w-full h-full object-cover" alt="portrait" />
+
+          <div>
+            <h2 className="text-2xl text-customColor-dark font-bold">Comment se déroule une séance photo ?</h2>
+            <p className="font-medium text-justify">
+              <br />Lors du déroulement d'une séance photo, le lieu choisi revêt une importance cruciale, que ce soit en extérieur, en studio ou à domicile. <br /><br />Dans le cadre d'une séance en extérieur, le photographe et son équipe se rendent sur le site préalablement sélectionné en fonction des besoins du client et du style recherché. La lumière naturelle, les décors variés et l'atmosphère extérieure offrent une toile de fond unique, créant des opportunités uniques pour capturer des moments authentiques.
+
+              <br /><br />Dans le cadre d'une séance en studio, l'environnement contrôlé permet au photographe de manipuler la lumière de manière précise, offrant une palette créative illimitée. Les fonds personnalisables, les accessoires et l'équipement professionnel contribuent à créer des images nettes et élégantes, mettant en valeur le sujet de manière artistique.
+
+              <br /><br />Quant à une séance à domicile, elle offre une dimension personnelle et intime. Je collabore étroitement avec vous pour intégrer des éléments significatifs de votre espace personnel dans les photographies. Cette approche crée une atmosphère chaleureuse et familière, capturant des moments uniques et authentiques.</p>
+            <button
+              className="mt-10 bg-customColor-dark text-customColor-white font-bold rounded my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <Link href="/tarifs">
+                Toutes les prestations
+                </Link>
+              
+            </button> 
+          </div>
+
+        </section>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <Footer />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    </>
+  )
 }
