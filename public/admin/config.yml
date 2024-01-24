@@ -12,7 +12,7 @@ collections:
     fields:
       - {label: "Image", name: "image", widget: "image"}
 
-   - name: "articles"
+  - name: "articles"
     label: "Articles"
     folder: "pages/index"
     create: true
