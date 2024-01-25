@@ -1,15 +1,20 @@
 
 import Header from '../components/Header';
 import Footer from '@/components/Footer';
+import Head from 'next/head';
 import Link from 'next/link';
 //import config from "/admin/config"
 
 
 const Home = () => {
 
+
 return (
   <>
+  <Head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+  </Head>
     <div className="flex flex-col font-sans antialiased">
       <Header />
       <div className="relative mx-auto">
