@@ -29,7 +29,7 @@ export default function Tarifs() {
                                 <div className="text-lg font-semibold">Juste pour moi</div>
                                 <div className="mt-2 space-y-3">
                                     <div className="text-gray-700">Séance individuelle</div>
-                                    <div className="text-gray-700">Extérieur ou studio au choix</div>
+                                    <div className="text-gray-700">Extérieur ou Intérieur au choix</div>
                                 </div>
                                 <div className="mt-1 mb-4 mr-1 text-xl font-bold sm:text-4xl">
                                     130€
@@ -57,7 +57,7 @@ export default function Tarifs() {
                                 <div className="text-lg font-semibold">Pour deux</div>
                                 <div className="mt-2 space-y-3">
                                 <div className="text-gray-700">Séance en binôme</div>
-                                <div className="text-gray-700">Extérieur ou studio au choix</div>
+                                <div className="text-gray-700">Extérieur ou Intérieur au choix</div>
                             </div>
                                 <div className="mt-1 mb-4 mr-1 text-xl font-bold sm:text-4xl">
                                     195€
@@ -86,7 +86,7 @@ export default function Tarifs() {
                                 <div className="text-lg font-semibold">Famille</div>
                                 <div className="mt-2 space-y-3">
                                 <div className="text-gray-700">Séance pour 4 personnes</div>
-                                <div className="text-gray-700">Extérieur ou studio au choix</div>
+                                <div className="text-gray-700">Extérieur ou Intérieur au choix</div>
                                 <div className="text-gray-700">30€ en supplément par personne, sauf pour les bambins de - 2 ans </div>
                             </div>
                                 <div className="mt-1 mb-4 mr-1 text-xl font-bold sm:text-4xl">
