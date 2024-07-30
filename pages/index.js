@@ -54,7 +54,7 @@ return (
 
           </button>
         </div>
-        <img src="assets/coulisse.jpg" size="100" className="rounded w-full h-full object-cover" alt="portrait" />
+        <img src="assets/coulisses.jpg" size="100" className="rounded w-full h-full object-cover" alt="portrait" />
       </section>
 
       <section className="grid md:grid-cols-2 pt-20 gap-10 mb-20 p-5 rounded-3xl">
